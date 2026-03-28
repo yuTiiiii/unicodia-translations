@@ -921,14 +921,11 @@ FFFD......: NotoSerif-Regular
 == Tamil Supplement
 11FC0..11FFF: NotoSansTamilSupplement-Regular
 == Cuneiform
-12000..12399: NotoSansCuneiform-Regular
+12000..12399: UnicodiaCunei
 == Cuneiform Numbers and Punctuation
-12400..1246E: NotoSansCuneiform-Regular
-1246F.......: [Tofu]
-12470..12474: NotoSansCuneiform-Regular
-12475..1247F: [Tofu]
+12400..1247F: UnicodiaCunei
 == Early Dynastic Cuneiform
-12480..12543: NotoSansCuneiform-Regular
+12480..12543: UnicodiaCunei
 == Archaic Cuneiform Numerals
 12550..12686: ArchaicCuneiformNumerals
 == Cypro-Minoan
@@ -1664,9 +1661,7 @@ FFFD......: NotoSerif-Regular
 == Latin Extended-G
 1DF00..1DF1E: NotoSerif-Regular
 1DF1F..1DF24: UFSTangutFixup
-1DF25..1DF2B: UnicodiaFunky
-1DF2C..1DF3A: UFSTangutFixup
-1DF3B..1DFFF: UnicodiaFunky
+1DF25..1DFFF: UnicodiaFunky
 == Glagolitic Supplement
 1E000..1E02A: Shafarik-Regular
 == Cyrillic Extended-D

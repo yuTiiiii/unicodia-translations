@@ -141,7 +141,7 @@ V
 {{vdeprec15}} :: Version with 15 deprecated chars :: Data/ongoing :: 0/1 parameters
 Prints the version of Unicode that has 15 deprecated characters.
 Parameter, if present: ordinal channel (see Turkish Lib.Misr.U+1FAA4)
-EVERYWHERE: the existence of ordinal channel will remove alpha/beta, and trailing .0: 15.0β → 15'xyz
+EVERYWHERE: the existence of ordinal channel will remove alpha/beta, and trailing .0: 15.0β → 15th
 
 {{version}} :: Latest version of Unicode :: Data/Unicode :: 0/1 parameters
 Prints the latest version of Unicode (15.0, 15.1β etc)

@@ -14,61 +14,61 @@
    <group id="Mon">
     <text id="1">
      <orig>January {1}</orig>
-     <transl>{1}年1月</transl>
+     <transl>{1} 年 1 月</transl>
     </text>
     <text id="2">
      <orig>February {1}</orig>
-     <transl>{1}年2月</transl>
+     <transl>{1} 年 2 月</transl>
     </text>
     <text id="3">
      <orig>March {1}</orig>
-     <transl>{1}年3月</transl>
+     <transl>{1} 年 3 月</transl>
     </text>
     <text id="4">
      <orig>April {1}</orig>
-     <transl>{1}年4月</transl>
+     <transl>{1} 年 4 月</transl>
     </text>
     <text id="5">
      <orig>May {1}</orig>
-     <transl>{1}年5月</transl>
+     <transl>{1} 年 5 月</transl>
     </text>
     <text id="6">
      <orig>June {1}</orig>
-     <transl>{1}年6月</transl>
+     <transl>{1} 年 6 月</transl>
     </text>
     <text id="7">
      <orig>July {1}</orig>
-     <transl>{1}年7月</transl>
+     <transl>{1} 年 7 月</transl>
     </text>
     <text id="8">
      <orig>August {1}</orig>
-     <transl>{1}年8月</transl>
+     <transl>{1} 年 8 月</transl>
     </text>
     <text id="9">
      <orig>September {1}</orig>
-     <transl>{1}年9月</transl>
+     <transl>{1} 年 9 月</transl>
     </text>
     <text id="10">
      <orig>October {1}</orig>
-     <transl>{1}年10月</transl>
+     <transl>{1} 年 10 月</transl>
     </text>
     <text id="11">
      <orig>November {1}</orig>
-     <transl>{1}年11月</transl>
+     <transl>{1} 年 11 月</transl>
     </text>
     <text id="12">
      <orig>December {1}</orig>
-     <transl>{1}年12月</transl>
+     <transl>{1} 年 12 月</transl>
     </text>
    </group>
    <group id="Favs">
     <text id="Add">
      <orig>Added to Favourites</orig>
-     <transl>加入收藏</transl>
+     <transl>已添加到收藏夹</transl>
     </text>
     <text id="Rem">
      <orig>Removed from Favourites</orig>
-     <transl>移出收藏</transl>
+     <transl>从收藏夹中移除</transl>
     </text>
    </group>
    <text id="Copied">
@@ -176,6 +176,11 @@
      <au-cmt>Years BC are unsupported</au-cmt>
      <transl>在 $ 之前</transl>
     </text>
+    <text id="YBeforeBc">
+     <orig>before $ BC</orig>
+     <au-cmt>Test: CJK ideographs, that’s probably all</au-cmt>
+     <transl>在 公元前 $ 之前</transl>
+    </text>
     <text id="YApprox">
      <orig>≈$</orig>
      <transl>约 $</transl>
@@ -194,7 +199,7 @@
     </text>
     <text id="CenturyBc">
      <orig>$ century BC</orig>
-     <transl>$ 世纪 BC</transl>
+     <transl>公元前 $ 世纪</transl>
     </text>
     <text id="Unknown">
      <orig>unknown</orig>
@@ -208,7 +213,7 @@
     </au-cmt>
     <text id="FirstInsc">
      <orig>first known inscription</orig>
-     <transl>首次发现</transl>
+     <transl>最早的文字记载</transl>
     </text>
     <text id="ModernForm">
      <orig>in modern form</orig>
@@ -240,7 +245,7 @@
     <text id="Script">
      <orig>Script info</orig>
      <au-cmt>Test: any normal block (e.g. Deva, Hebr…)</au-cmt>
-     <transl>脚本信息</transl>
+     <transl>书写体系信息</transl>
     </text>
     <text id="Control">
      <orig>About control characters</orig>
@@ -253,12 +258,12 @@
      <transl>默认忽略字符</transl>
     </text>
     <text id="Emoji16">
-     <orig>Graphic &lt;a {1}&gt;emoji&lt;/a&gt; requires U+FE0F (=VS16)</orig>
+     <orig>Graphic &lt;a {1}&gt;emoji&lt;/a&gt; requires &lt;a {2}&gt;U+FE0F&lt;/a&gt; (=VS16)</orig>
      <au-cmt>
       <p>{1}=misc props of &lt;a&gt;, do not forget</p>
       <p>Test: Misc symbols (U+2600)</p>
      </au-cmt>
-     <transl>图形 &lt;a {1}&gt;表情符号&lt;/a&gt; 需要 U+FE0F (=VS16)</transl>
+     <transl>图形 &lt;a {1}&gt;表情符号&lt;/a&gt; 需要 &lt;a {2}&gt;U+FE0F&lt;/a&gt; (=VS16)</transl>
     </text>
     <text id="SuttonNoFill">
      <orig>No fills and rotations</orig>
@@ -268,7 +273,7 @@
     <text id="NChars">
      <orig>{1|one=? character|many=? characters}</orig>
      <au-cmt>UNUSED, NChars2 instead</au-cmt>
-     <transl>{1|one=? 字符|many=? 字符}</transl>
+     <transl>{1|one=? 个字符|many=? 个字符}</transl>
     </text>
     <text id="NChars2">
      <orig>{1} ({2|one=? character|many=? characters})</orig>
@@ -277,7 +282,7 @@
       <p>{2} = # of characters</p>
       <p>Test: almost every header of pop-up window: Control, Latin, blocks…</p>
      </au-cmt>
-     <transl>{1} ({2} 文字)</transl>
+     <transl>{1} ({2} 个字符)</transl>
     </text>
     <text id="NoHent">
      <orig>without &lt;a {1} &gt;Hentaigana&lt;/a&gt;</orig>
@@ -296,7 +301,7 @@
       <p>{3} = additional technical tags (e.g. href, style)</p>
       <p>Test: Hiragana</p>
      </au-cmt>
-     <transl>不含{1} ({2} 文字 &lt;a {3} &gt;变体假名&lt;/a&gt; )</transl>
+     <transl>不含{1} ({2} 个字符 &lt;a {3} &gt;变体假名&lt;/a&gt; )</transl>
     </text>
     <text id="Comp">
      <orig>String content</orig>
@@ -312,58 +317,58 @@
     </text>
     <text id="EqEm">
      <orig>=emoji {1}, </orig>
-     <transl>=表情符号 {1}, </transl>
+     <transl>= 表情符号 {1}, </transl>
     </text>
     <text id="NewBlk">
      <orig>New blocks</orig>
-     <transl>新块</transl>
+     <transl>新区块</transl>
     </text>
     <text id="AffBlk">
      <orig>Affects blocks</orig>
      <au-cmt>Test: select Phags-Pa, click “?”</au-cmt>
-     <transl>关联的块</transl>
+     <transl>关联的区块</transl>
     </text>
    </group>
    <group id="Deprec">
     <text id="0">
      <orig>&lt;a {1}&gt;Deprecated character&lt;/a&gt;</orig>
      <au-cmt>Unused right now, but may appear in newer Unicode</au-cmt>
-     <transl>&lt;a {1}&gt;不建议使用的字符&lt;/a&gt;</transl>
+     <transl>&lt;a {1}&gt;弃用字符&lt;/a&gt;</transl>
     </text>
     <text id="1">
      <orig>&lt;a {1}&gt;Deprecated character&lt;/a&gt;, used to revert to default state</orig>
      <au-cmt>Example: 206B</au-cmt>
-     <transl>&lt;a {1}&gt;不建议使用的字符&lt;/a&gt;, 用于恢复默认状态</transl>
+     <transl>&lt;a {1}&gt;弃用字符&lt;/a&gt;, 用于恢复默认状态</transl>
     </text>
     <text id="Ins">
      <orig>&lt;a {1}&gt;Deprecated character&lt;/a&gt;, use {2} instead</orig>
      <au-cmt>Example: 17A3</au-cmt>
-     <transl>&lt;a {1}&gt;不建议使用的字符&lt;/a&gt;, 使用 {2} 替代</transl>
+     <transl>&lt;a {1}&gt;弃用字符&lt;/a&gt;, 使用 {2} 替代</transl>
     </text>
     <text id="Ins2">
      <orig>&lt;a {1}&gt;Deprecated character&lt;/a&gt;, use {2} or {3} instead</orig>
      <au-cmt>Only 2329, 232A</au-cmt>
-     <transl>&lt;a {1}&gt;不建议使用的字符&lt;/a&gt;, 使用 {2} 或 {3} 替代</transl>
+     <transl>&lt;a {1}&gt;弃用字符&lt;/a&gt;, 使用 {2} 或 {3} 替代</transl>
     </text>
     <text id="2">
      <orig>&lt;a {1}&gt;Deprecated character&lt;/a&gt;, use other bidirectional mechanisms instead</orig>
      <au-cmt>Only 206A</au-cmt>
-     <transl>&lt;a {1}&gt;不建议使用的字符&lt;/a&gt;, 使用其他双向机制替代</transl>
+     <transl>&lt;a {1}&gt;弃用字符&lt;/a&gt;, 使用其他双向机制替代</transl>
     </text>
     <text id="3">
      <orig>&lt;a {1}&gt;Deprecated character&lt;/a&gt;, use specific Arabic presentation forms instead</orig>
      <au-cmt>Only 206D</au-cmt>
-     <transl>&lt;a {1}&gt;不建议使用的字符&lt;/a&gt;, 使用特定阿拉伯展示形式替代</transl>
+     <transl>&lt;a {1}&gt;弃用字符&lt;/a&gt;, 使用特定阿拉伯展示形式替代</transl>
     </text>
     <text id="4">
      <orig>&lt;a {1}&gt;Deprecated character&lt;/a&gt;, use 0660…69 and other national digits</orig>
      <au-cmt>Only 206E</au-cmt>
-     <transl>&lt;a {1}&gt;不建议使用的字符&lt;/a&gt;, 使用 0660 ... 69 和其他国别数字</transl>
+     <transl>&lt;a {1}&gt;弃用字符&lt;/a&gt;, 使用 0660…0669 和其他的国家数字</transl>
     </text>
     <text id="5">
      <orig>&lt;a {1}&gt;Deprecated character&lt;/a&gt;, use application-level protocols</orig>
      <au-cmt>Only E0001</au-cmt>
-     <transl>&lt;a {1}&gt;不建议使用的字符&lt;/a&gt;, 使用应用程序级协议</transl>
+     <transl>&lt;a {1}&gt;弃用字符&lt;/a&gt;, 使用应用层协议</transl>
     </text>
    </group>
    <group id="Bidi">
@@ -371,11 +376,11 @@
      <au-cmt>Test: Explicit chars in GenPunct</au-cmt>
      <text id="Name">
       <orig>Direction tag</orig>
-      <transl>方向标签</transl>
+      <transl>方向标记</transl>
      </text>
      <text id="Short">
       <orig>Direction tag</orig>
-      <transl>方向标签</transl>
+      <transl>方向标记</transl>
      </text>
      <text id="Text">
       <orig>
@@ -384,9 +389,9 @@
        <p>Strictly saying, each of these characters is a separate class in bidirectional algorithm, but for non-programmers it’s enough to know: these are direction tags.</p>
       </orig>
       <transl>
-       <p>这些字符是格式化字符，用来修正 Unicode 双向算法的操作。</p>
+       <p>这些格式字符的作用是用来修正 Unicode 双向算法的处理方式。</p>
        <p />
-       <p>严格来说，每个这样的字符都是双向算法中的一个独立类别，但对于非程序员而言，只需知道：这些都是方向标签。</p>
+       <p>严格来讲，它们在算法中各自代表一个独立的分类，但如果你不是程序员，只要知道它们是用于控制方向的标记就够了。</p>
       </transl>
      </text>
     </group>
@@ -402,7 +407,7 @@
      </text>
      <text id="Text">
       <orig>Written right to left. There are some subtle rules related to European numbers.</orig>
-      <transl>从右向左书写。与欧洲数字有一些微妙规则相关联。</transl>
+      <transl>从右向左书写。涉及欧洲数字时有一些微妙规则。</transl>
      </text>
     </group>
     <group id="AN">
@@ -420,7 +425,7 @@
      </text>
      <text id="Text">
       <orig>Written right to left. There are some subtle rules related no nesting levels.</orig>
-      <transl>从右向左书写。与嵌套级别有一些微妙规则。</transl>
+      <transl>从右向左书写。涉及嵌套层级时有一些微妙规则。</transl>
      </text>
     </group>
     <group id="B">
@@ -461,7 +466,7 @@
        <p>See [[pt:graphic|graphic character]].</p>
       </orig>
       <transl>
-       <p>[[pt:control|控制字符]], 连接符和 [[pk:E0000|标签]] 没有图形表示。</p>
+       <p>没有图形表示的 [[pt:control|控制字符]], 连接符和 [[pk:E0000|标签]]。</p>
        <p />
        <p>参见 [[pt:graphic|图形字符]]。</p>
       </transl>
@@ -482,7 +487,7 @@
      </text>
      <text id="Text">
       <orig>When appear in European or Arabic number, these characters become its part.</orig>
-      <transl>当出现在欧洲或阿拉伯数字中时，这些字符成为其一部分。</transl>
+      <transl>当出现在欧洲或阿拉伯数字中时，这些字符会成为其一部分。</transl>
      </text>
     </group>
     <group id="EN">
@@ -500,7 +505,7 @@
      </text>
      <text id="Text">
       <orig>Written left to right. There are subtle rules related to Arabic text.</orig>
-      <transl>从左向右书写。与阿拉伯文本有一些微妙规则关联。</transl>
+      <transl>从左向右书写。涉及阿拉伯文本时有一些微妙规则。</transl>
      </text>
     </group>
     <group id="ES">
@@ -518,7 +523,7 @@
      </text>
      <text id="Text">
       <orig>+ and − characters inside a European number become its part. ± character is outside of this class.</orig>
-      <transl>+和-字符在欧洲数字中成为其一部分。±字符不属于此类。</transl>
+      <transl>+ 和 - 字符在欧洲数字中成为其一部分。± 字符不属于此类。</transl>
      </text>
     </group>
     <group id="ET">
@@ -551,7 +556,7 @@
      </text>
      <text id="Text">
       <orig>Latin, Cyrillic and other scripts written left-to-right. As [[ps:Hani|CJK ideographs]] are the most numerous part of Unicode, it is the pargest class.</orig>
-      <transl>拉丁文、西里尔文和其他从左至右书写的脚本。由于[[ps:Hani|CJK 表意文字]]是 Unicode 中数量最多的部分，因此这是最大的类别。</transl>
+      <transl>拉丁文、西里尔文和其他从左至右书写的体系。由于 [[ps:Hani|CJK 表意文字]] 是 Unicode 中数量最多的部分，因此这是最大的类别。</transl>
      </text>
     </group>
     <group id="NSM">
@@ -576,11 +581,11 @@
      <au-cmt>Test: !"…</au-cmt>
      <text id="Name">
       <orig>Other neutral</orig>
-      <transl>其他 neutral</transl>
+      <transl>其他中立字符</transl>
      </text>
      <text id="Short">
       <orig>Other neutral</orig>
-      <transl>其他 neutral</transl>
+      <transl>其他中立字符</transl>
      </text>
      <text id="Text">
       <orig>Adapts to direction of surrounding text.</orig>
@@ -619,9 +624,9 @@
        <p>[[pb:AL|Arabic letters]] behave differently with European numbers and comprise a separate category.</p>
       </orig>
       <transl>
-       <p>[[ps:Hebr|希伯来语]]和中东的历史脚本。</p>
+       <p>[[ps:Hebr|希伯来文字]] 和中东的历史书写体系。</p>
        <p />
-       <p>[[pb:AL|阿拉伯字母]]与欧洲数字有不同的行为，并构成一个单独的类别。</p>
+       <p>[[pb:AL|阿拉伯字母]] 与欧洲数字处理方式不同，并构成一个单独的类别。</p>
       </transl>
      </text>
     </group>
@@ -640,7 +645,7 @@
      </text>
      <text id="Text">
       <orig>Three control characters: 09 (tabulation), 0B (vertical tabulation), 1F (separator 1).</orig>
-      <transl>三个控制字符：09（制表）、0B（垂直制表）、1F（分隔符 1）。</transl>
+      <transl>三个控制字符：09（制表符）、0B（垂直制表符）、1F（分隔符 1）。</transl>
      </text>
     </group>
     <group id="WS">
@@ -663,7 +668,7 @@
        <p>See also [[pt:space|space]].</p>
       </orig>
       <transl>
-       <p>中性。有关于带有空格的文本格式的一些微妙规则。</p>
+       <p>中性。涉及空格的文本格式存在一些微妙规则。</p>
        <p />
        <p>另见 [[pt:空格|空格]]。</p>
       </transl>
@@ -701,11 +706,19 @@
     </text>
     <text id="CjkZhuang">
      <orig>Zhuang number</orig>
-     <transl>壮文 数值</transl>
+     <transl>壮语数字</transl>
     </text>
     <text id="CjkVietnamese">
      <orig>Vietnamese number</orig>
      <transl>越南数字</transl>
+    </text>
+    <text id="CjkTay">
+     <orig>Tay number</orig>
+     <transl>岱依族数字</transl>
+    </text>
+    <text id="CjkZhuangTay">
+     <orig>Zhuang/Tay number</orig>
+     <transl>壮族/岱依族数字</transl>
     </text>
    </group>
    <group id="Input">
@@ -720,7 +733,7 @@
       <p>Means Ilya Birman’s typography layout</p>
       <p>Test: U+011B both Alt code and Birman</p>
      </au-cmt>
-     <transl>缅甸</transl>
+     <transl>Birman 键盘布局</transl>
     </text>
     <text id="AltCode">
      <orig>Alt code</orig>
@@ -761,7 +774,7 @@
     <text id="VerAppear">
      <orig>Appeared in version</orig>
      <au-cmt>Test: block info</au-cmt>
-     <transl>出现版本</transl>
+     <transl>引入版本</transl>
     </text>
     <text id="NonChars">
      <orig>Non-characters</orig>
@@ -776,7 +789,7 @@
     <text id="VerFilled">
      <orig>Filled in version</orig>
      <au-cmt>Test: Any full block (e.g. ASCII)</au-cmt>
-     <transl>填充版本</transl>
+     <transl>补全版本</transl>
     </text>
     <text id="Version">
      <orig>Unicode version</orig>
@@ -796,7 +809,7 @@
     <text id="Script">
      <orig>Script</orig>
      <au-cmt>Test: Any char w/script (e.g. A)</au-cmt>
-     <transl>脚本</transl>
+     <transl>书写体系</transl>
     </text>
     <text id="Type">
      <orig>Type</orig>
@@ -806,12 +819,12 @@
     <text id="Bidi">
      <orig>In bidirectional writing</orig>
      <au-cmt>Test: any char</au-cmt>
-     <transl>双向书写</transl>
+     <transl>书写方向</transl>
     </text>
     <text id="Computers">
      <orig>Computers</orig>
      <au-cmt>Test: any char from Legacy computing</au-cmt>
-     <transl>计算机s</transl>
+     <transl>计算机</transl>
     </text>
     <text id="Dir">
      <orig>Direction</orig>
@@ -844,7 +857,7 @@
     <text id="base">
      <orig>Base</orig>
      <au-cmt>Test: props of any base plane script</au-cmt>
-     <transl>基底</transl>
+     <transl>基础</transl>
     </text>
     <text id="Utf8">
      <orig>UTF-8</orig>
@@ -867,11 +880,11 @@
     </text>
     <text id="AllVer">
      <orig>All characters are in Unicode version</orig>
-     <transl>所有字符都在Unicode版本中</transl>
+     <transl>所有字符都在 Unicode 版本中</transl>
     </text>
     <text id="EmojiVer">
      <orig>Approved in emoji version</orig>
-     <transl>在表情符号版本中批准</transl>
+     <transl>在表情符号版本核准</transl>
     </text>
     <text id="EmojiV">
      <orig>Emoji {1}</orig>
@@ -890,7 +903,7 @@
     </text>
     <text id="CameAfter">
      <orig>, after Unicode {1}</orig>
-     <transl>，在Unicode {1}之后</transl>
+     <transl>，在Unicode {1} 之后</transl>
     </text>
     <text id="Extend">
      <orig>Extended</orig>
@@ -900,7 +913,11 @@
     <text id="Shrunk">
      <orig>Shrunk</orig>
      <au-cmt>As of U16, one block was shrunk: Tang supp</au-cmt>
-     <transl>缩小</transl>
+     <transl>缩减</transl>
+    </text>
+    <text id="Brk">
+     <orig>Line breaking</orig>
+     <transl>换行</transl>
     </text>
    </group>
    <group id="Os">
@@ -924,7 +941,7 @@
     <text id="FontsFor">
      <orig>Fonts for U+%04X</orig>
      <au-cmt>Test: some char (better Latin), click font name (=OS style)</au-cmt>
-     <transl>U+%04X的字体</transl>
+     <transl>U+%04X 字体</transl>
     </text>
     <text id="Style">
      <orig>(OS style)</orig>
@@ -934,15 +951,15 @@
    <group id="Life">
     <text id="Alive">
      <orig>alive ''(no threats for main language, like Cyrillic)''</orig>
-     <transl>使用中 ''（稳定的主要语言，如：西里尔文）''</transl>
+     <transl>使用中 ''（稳定的主要语言，如：西里尔文字）''</transl>
     </text>
     <text id="Danger">
      <orig>endangered due to language ''(like Cherokee)''</orig>
-     <transl>因语言而濒危 ''（如：切罗基语）''</transl>
+     <transl>因语言而濒危 ''（如：切罗基文字）''</transl>
     </text>
     <text id="Competing">
      <orig>endangered due to script competition ''(like Tai Tham)''</orig>
-     <transl>因其它语言竞争而濒危 ''（如：傣那文）''</transl>
+     <transl>因文字竞争而濒危 ''（如：西双版纳老傣文字）''</transl>
     </text>
     <text id="Dead">
      <orig>dead ''(will lose soon/recently lost users, like Nüshu)''</orig>
@@ -950,31 +967,31 @@
     </text>
     <text id="Sacred">
      <orig>religious ''(dead in secular use, like Coptic)''</orig>
-     <transl>宗教性 ''（世俗使用中已消失，如：科普特文）''</transl>
+     <transl>宗教性 ''（世俗使用中已消失，如：科普特文字）''</transl>
     </text>
     <text id="New">
      <orig>new ''(appeared recently, like N’Ko)''</orig>
-     <transl>新 ''（最近出现，如：N'Ko文）''</transl>
+     <transl>新 ''（最近出现，如：西非书面文字）''</transl>
     </text>
     <text id="Reborn">
      <orig>revived ''(like Tifinagh)''</orig>
-     <transl>复兴 ''（如：提非纳文）''</transl>
+     <transl>复兴 ''（如：提非纳文字）''</transl>
     </text>
     <text id="Exp">
      <orig>experimental ''(attempt to make a new script for existing language, like Deseret)''</orig>
-     <transl>实验 ''（为现有语言创造新脚本的尝试，如：德瑟雷特字母）''</transl>
+     <transl>实验性 ''（为现有语言创造新书写体系的尝试，如：德瑟雷特文字）''</transl>
     </text>
     <text id="Conserved">
      <orig>historical, no decipherment needed ''(like Glagolitic)''</orig>
-     <transl>历史性的，无需解读 ''（如：格拉哥里字母）''</transl>
+     <transl>历史性的，无需解读 ''（如：格拉哥里文字）''</transl>
     </text>
     <text id="Undeciphered">
      <orig>undecipered ''(like Linear A)''</orig>
-     <transl>未解读 ''（如：线形文字A）''</transl>
+     <transl>未解读 ''（如：线形文字 A）''</transl>
     </text>
     <text id="Partly">
      <orig>partly deciphered ''(like Carian)''</orig>
-     <transl>部分解读 ''（如：卡里安字母）''</transl>
+     <transl>部分解读 ''（如：卡里亚文字）''</transl>
     </text>
     <text id="Deciphered">
      <orig>deciphered ''(like cuneiform)''</orig>
@@ -982,7 +999,7 @@
     </text>
     <text id="ForRev">
      <orig>made for revival of dead language ''(like Osage)''</orig>
-     <transl>为恢复已废弃语言而设计 ''（如：奥萨格字母）''</transl>
+     <transl>为恢复消亡语言而设计 ''（如：欧塞奇文字）''</transl>
     </text>
    </group>
    <group id="Dir">
@@ -999,12 +1016,12 @@
     <text id="L_cjk">
      <orig>→ ''(historically ←↓↓ in columns)''</orig>
      <au-cmt>Test: any CJK script: Hani, Nshu</au-cmt>
-     <transl>→ ''(历史上←↓↓列)''</transl>
+     <transl>→ ''(历史上 ←↓↓ 列)''</transl>
     </text>
     <text id="L_cunei">
      <orig>←↓↓ in columns, then →</orig>
      <au-cmt>Test: cuneiform</au-cmt>
-     <transl>←↓↓列，然后→</transl>
+     <transl>←↓↓ 列，然后 →</transl>
     </text>
     <text id="L_ogam">
      <orig>→, ↑</orig>
@@ -1014,7 +1031,12 @@
     <text id="L_col">
      <orig>↓↓→ in columns</orig>
      <au-cmt>Test: Mong, Ougr, Phag</au-cmt>
-     <transl>↓↓→列</transl>
+     <transl>↓↓→ 列</transl>
+    </text>
+    <text id="L_most">
+     <orig>mostly →</orig>
+     <au-cmt>Test: Runr</au-cmt>
+     <transl>大部分 →</transl>
     </text>
     <text id="TD">
      <orig>↓</orig>
@@ -1024,36 +1046,36 @@
     <text id="Both">
      <orig>wrote both ← and →</orig>
      <au-cmt>Test: Cari, Egyp, Ital</au-cmt>
-     <transl>写←和→两者</transl>
+     <transl>写 ← 和 → 两者</transl>
     </text>
     <text id="R_col">
      <orig>←↓↓ in columns</orig>
      <au-cmt>Test: Kits, Mero</au-cmt>
-     <transl>写←和→两者</transl>
+     <transl>写 ← 和 → 两者</transl>
     </text>
     <text id="R_most">
      <orig>mostly ←</orig>
      <au-cmt>Test: Cprt, Lydi, Sarb</au-cmt>
-     <transl>大多←</transl>
+     <transl>大部分 ←</transl>
     </text>
     <text id="Sogd">
      <orig>↓↓→ in columns; ←</orig>
      <au-cmt>Test: Sogd (new!), Chrs</au-cmt>
-     <transl>↓↓→列； ←</transl>
+     <transl>↓↓→ 列； ←</transl>
     </text>
    </group>
    <group id="Type">
     <text id="Alph">
      <orig>[[pt:alphabet|alphabetic]]{{-}}''like Cyrillic''</orig>
-     <transl>[[pt:alphabet|字母]]{{-}}''如：西里尔字母''</transl>
+     <transl>[[pt:alphabet|字母]]{{-}}''如：西里尔文字''</transl>
     </text>
     <text id="Argu">
      <orig>[[pt:arguable|arguable]]{{-}}''like Thaana''</orig>
-     <transl>[[pt:arguable|有争议的]]{{-}}''如：塔纳字母''</transl>
+     <transl>[[pt:arguable|有争议的]]{{-}}''如：它拿文字''</transl>
     </text>
     <text id="Cons">
      <orig>[[pt:abjad|consonant]]{{-}}''like Hebrew''</orig>
-     <transl>[[pt:abjad|辅音]]{{-}}''如：希伯来字母''</transl>
+     <transl>[[pt:abjad|辅音]]{{-}}''如：希伯来文字''</transl>
     </text>
     <text id="Syll">
      <orig>[[pt:syllabic|syllabic]]{{-}}''like Japanese Katakana/Hiragana''</orig>
@@ -1065,19 +1087,19 @@
     </text>
     <text id="Abug">
      <orig>[[pt:abugida|abugida]]{{-}}''like Ethiopic''</orig>
-     <transl>[[pt:abugida|阿布吉达]]{{-}}''如：埃塞俄比亚字母''</transl>
+     <transl>[[pt:abugida|阿布吉达]]{{-}}''如：埃塞俄比亚文字''</transl>
     </text>
     <text id="Brah">
      <orig>[[pt:brahmic|Brahmic abugida]]{{-}}''like Devanagari''</orig>
-     <transl>[[pt:婆罗米文c|婆罗米系阿布吉达]]{{-}}''如：天城体''</transl>
+     <transl>[[pt:婆罗米文c|婆罗米系阿布吉达]]{{-}}''如：天城文字''</transl>
     </text>
     <text id="Hier">
      <orig>[[pt:hiero|ideographic]]{{-}}''like CJK ideographs''</orig>
-     <transl>[[pt:hiero|表意]]{{-}}''如：CJK汉字''</transl>
+     <transl>[[pt:hiero|表意]]{{-}}''如：中日韩汉字''</transl>
     </text>
     <text id="Syhi">
      <orig>ideosyllabic{{-}}''like Linear B''</orig>
-     <transl>表音节{{-}}''如：线形文字B''</transl>
+     <transl>表音节{{-}}''如：线形文字 B''</transl>
     </text>
     <text id="Cohi">
      <orig>ideoconsonant{{-}}''like Egyptian hieroglyphs''</orig>
@@ -1113,7 +1135,7 @@
     </text>
     <text id="Shr">
      <orig>Shrunk</orig>
-     <transl>缩小</transl>
+     <transl>缩减</transl>
     </text>
    </group>
    <group id="Lang">
@@ -1138,20 +1160,31 @@
     </group>
     <text id="Qty">
      <orig>{1} as of {2}</orig>
-     <transl>{1}截至{2}</transl>
+     <transl>截至 {2} 为 {1}</transl>
     </text>
     <text id="QtyNative">
      <orig>{1} as native as of {2}</orig>
-     <transl>{1}截至{2}为母语</transl>
+     <transl>截至 {2} 母语使用者为 {1}</transl>
     </text>
     <text id="QtyIndia">
      <orig>{1} in India as of {2}</orig>
      <au-cmt>Test: Nag</au-cmt>
-     <transl>{1}截至{2}在印度</transl>
+     <transl>截至 {2} 印度地区为 {1}</transl>
     </text>
-    <text id="Decade">
-     <orig>{1}s</orig>
-     <transl>{1}年代</transl>
+    <text id="QtyTotal">
+     <orig>total {1} as of {2}</orig>
+     <au-cmt>Test: Ethi A, Gamo-Gofa-Dawro</au-cmt>
+     <transl>截至 {2} 年共计 {1}</transl>
+    </text>
+    <text id="QtyDecade">
+     <orig>{1} as of {2}s</orig>
+     <au-cmt>Test: Cakm, Gong, Guru, Limb…</au-cmt>
+     <transl>{2} 年代统计为 {1}</transl>
+    </text>
+    <text id="QtyDecadeNative">
+     <orig>{1} native speakers as of {2}s</orig>
+     <au-cmt>Test: Arab only</au-cmt>
+     <transl>{2} 年代母语使用者为 {1}</transl>
     </text>
    </group>
    <group id="LangLoc">
@@ -1181,6 +1214,14 @@
     <text id="China">
      <orig>China</orig>
      <transl>中国</transl>
+    </text>
+    <text id="ChinaSw">
+     <orig>South-Western China</orig>
+     <transl>中国西南部</transl>
+    </text>
+    <text id="Ethiopia">
+     <orig>Ethiopia</orig>
+     <transl>埃塞俄比亚</transl>
     </text>
     <text id="IndiaCen">
      <orig>Central India</orig>
@@ -1232,6 +1273,11 @@
      <au-cmt>Gurmukhi</au-cmt>
      <transl>巴基斯坦</transl>
     </text>
+    <text id="Russia">
+     <orig>Russia</orig>
+     <au-cmt>Test: Cyrl C</au-cmt>
+     <transl>俄罗斯</transl>
+    </text>
     <text id="SierraLeone">
      <orig>Sierra Leone</orig>
      <transl>塞拉利昂</transl>
@@ -1246,7 +1292,7 @@
     </text>
     <text id="Thailand">
      <orig>Thailand</orig>
-     <transl>泰语l和</transl>
+     <transl>泰国</transl>
     </text>
     <text id="Usa">
      <orig>USA</orig>
@@ -1258,14 +1304,101 @@
      <transl>越南</transl>
     </text>
    </group>
+   <group id="Egyp">
+    <text id="Bullet">
+     <orig>Reliability</orig>
+     <transl>可靠性</transl>
+    </text>
+    <text id="Ext">
+     <orig>extended ''(unreliable)''</orig>
+     <transl>扩展 ''（不可靠）''</transl>
+    </text>
+    <text id="Leg">
+     <orig>legacy ''(confirmed but deemed extraneous)''</orig>
+     <transl>遗留 ''（已证实但被视为多余）''</transl>
+    </text>
+    <text id="Core">
+     <orig>core ''(confirmed)''</orig>
+     <transl>核心 ''（已证实）''</transl>
+    </text>
+    <text id="Spec">
+     <orig>special character</orig>
+     <transl>特殊字符</transl>
+    </text>
+   </group>
+   <group id="Egyp2">
+    <text id="Short">
+     <orig>Short description</orig>
+     <transl>简短描述</transl>
+    </text>
+    <text id="Uni">
+     <orig>Unicode’s description</orig>
+     <transl>Unicode 描述</transl>
+    </text>
+    <text id="Equiv">
+     <orig>Equivalent sequence</orig>
+     <transl>等价序列</transl>
+    </text>
+    <text id="Mean">
+     <orig>Meaning</orig>
+     <transl>含义</transl>
+    </text>
+    <text id="Ind">
+     <orig>Index</orig>
+     <au-cmt>A1, B10c etc</au-cmt>
+     <transl>索引</transl>
+    </text>
+    <text id="Pron">
+     <orig>Pronunciation</orig>
+     <transl>发音</transl>
+    </text>
+   </group>
   </group>
   <group id="Block">
+   <group id="Stock">
+    <au-cmt>
+     <p>Stock (used multiple times) block names</p>
+     <p>{1} = A, B, C…</p>
+    </au-cmt>
+    <text id="Arab">
+     <orig>Arabic extended {1}</orig>
+     <transl>阿拉伯文字扩展 {1}</transl>
+    </text>
+    <text id="Cyrl">
+     <orig>Cyrillic extended {1}</orig>
+     <transl>西里尔文字扩展 {1}</transl>
+    </text>
+    <text id="Hani">
+     <orig>CJK unified ideographs extension {1}</orig>
+     <transl>中日韩统一汉字扩展 {1}</transl>
+    </text>
+    <text id="Hira">
+     <orig>Kana extended {1}</orig>
+     <transl>假名扩展 {1}</transl>
+    </text>
+    <text id="Latn">
+     <orig>Latin extended {1}</orig>
+     <transl>拉丁文字扩展 {1}</transl>
+    </text>
+    <text id="Mymr">
+     <orig>Myanmar extended {1}</orig>
+     <transl>缅甸文字扩展 {1}</transl>
+    </text>
+    <text id="ZARR">
+     <orig>Arrows supplemental {1}</orig>
+     <transl>箭头补充 {1}</transl>
+    </text>
+    <text id="ZMAT">
+     <orig>Mathematical symbols miscellaneous {1}</orig>
+     <transl>杂类数学符号 {1}</transl>
+    </text>
+   </group>
    <group id="0000">
     <text id="Name">
      <orig>Latin basic (ASCII)</orig>
-     <transl>拉丁文 basic (ASCII)</transl>
+     <transl>基本拉丁文字（ASCII）</transl>
     </text>
-    <text id="Text" force-attention="true">
+    <text id="Text">
      <orig>
       <p>'''Americal Standard Code for Information Interchange (ASCII)''' is a seven-bit character encoding developed in the USA in 1963. A width of 7 bits was chosen as a compromise for data transfer via telegraph. If it’s too much, ASCII may be easily cut to 6 bits, leaving characters 40…5F and 20…3F. '''Basic Latin''' of Unicode is the same as ASCII, so English Unicode text is readable even in wrong encoding.</p>
       <p />
@@ -1276,55 +1409,49 @@
       <p>The rest 128 characters could be filled with everything. One such 8-bit encoding, [[pt:latin1|Latin-1]], also came to Unicode.</p>
      </orig>
      <transl>
-      <p>'''美国信息交换标准代码（ASCII）'''是1963年在美国开发的一种七位字符编码。选择7位宽度是为了便于通过电报传输数据。如果过多，ASCII可以很容易地减少到6位，留下字符40 ... 5F和20 ... 3F。 '''基本拉丁字母'''与ASCII相同，因此即使在错误编码的情况下，英语Unicode文本也是可读的。</p>
+      <p>'''美国信息交换标准代码（ASCII）'''是 1963 年在美国开发的一种七位字符编码。选择 7 位宽度是为了便于通过电报传输数据。如果位数过多，ASCII 可以很容易地减少到 6 位，留下字符 40…5F 和 20…3F。 '''基本拉丁文字''' 与 ASCII 相同，因此即使在错误编码的情况下，英语 Unicode 文本也是可读的。</p>
       <p />
-      <p>前32个字符，00 ... 1F，是[[pt:控制字符|控制字符]]，其中只有少数至今仍在使用。接下来的是95个可打印字符。许多字符可以追溯到打字机：要打印À，需要键入A，回车一格，然后输入反引号。最后一个字符，7F=DEL，可以追溯到穿孔带{{-}}所有轨道上都有孔表示该字符是误打的，不应{{_}}读取。</p>
+      <p>前 32 个字符，00…1F，是 [[pt:控制字符|控制字符]]，其中只有少数至今仍在使用。随后是 95 个可打印字符。许多字符可以追溯到打字机：要打印 À，需要键入 A，回退一格，然后输入反引号。最后一个字符，7F=DEL，可以追溯到穿孔带 {{-}} 所有轨道均打孔表示该字符是误打的，不应 {{_}} 读取。</p>
       <p />
-      <p>ASCII存在许多国家标准变体：英国用英镑£替换了井号#，苏联用货币符号¤替换了美元$，德国用变音符ÄÖÜäöü替换了[\]{|}，日本用日元¥替换了反斜杠 \ ...</p>
+      <p>ASCII 存在许多国家标准变体：英国用英镑 £ 替换了井号 #，苏联用货币符号 ¤ 替换了美元 $，德国用变音符 ÄÖÜäöü 替换了 [\]{|}，日本用日元 ¥ 替换了反斜杠 \ …</p>
+      <p />
+      <p>剩下的 128 个字符空间可以填充任何内容。一种名为 [[pt:latin1|拉丁文字西欧语言（Latin-1）]] 的 8 位编码也是如此，它后来也被引入了 Unicode。</p>
      </transl>
     </text>
    </group>
    <group id="0080">
     <text id="Name">
      <orig>Latin-1 supplement</orig>
-     <transl>拉丁文-1 supplement</transl>
+     <transl>拉丁文字西欧语言补充</transl>
     </text>
     <text id="Text">
      <orig>
       <p>Latin-1 is a second name of 8-bit encoding '''ISO{{_}}8859-1''' introduced in 1987 and extending [[pt:ascii|ASCII]] to European languages.</p>
       <p />
-      <p>The first 32 characters, 80…9F, are [[pt:control|control]] for compatibility with 7-bit encodings: mail programs sometimes lost the upper bit, and it’s infeasible to have [[pt:graphic|printable]] characters here. Nowadays these characters are not{{_}}used as intended and serve as [[pt:private|private-use]]. For example, Windows-1252 encoding is the same Latin-1, but control positions are replaced with typography characters. It got to the point where World Wide Web standards say: if a page requests ISO{{_}}8859-1, display it in Windows-1252.</p>
+      <p>The first 32 characters, 80…9F, are [[pt:control|control]] for compatibility with 7-bit encodings: early mail programs discarded the upper bit, and it’s infeasible to have [[pt:graphic|printable]] characters here. Nowadays these characters are no longer used as intended and often repurposed for [[pt:private|private-use]]. For example, Windows-1252 is a modified version of Latin-1 where control positions are replaced with typographical characters. It got to the point where World Wide Web standards say: if a page requests ISO{{_}}8859-1, display it in Windows-1252.</p>
       <p />
       <p>We see characters × and ÷ among letters. Initially Œœ should have been there, but the French delegate insisted that OE was enough.</p>
      </orig>
      <au-cmt>French delegate refused: https://elementy.ru/problems/2689/Yunikod_na_Novyy_god</au-cmt>
      <transl>
-      <p>拉丁文-1 is a second name of 8-bit 编码 '''ISO{{_}}8859-1''' introduced in 1987 和 extending [[pt:ASCII|ASCII]] to 欧洲an 语言.</p>
+      <p>拉丁文字西欧语言（Latin-1）是 8 位编码 '''ISO{{_}}8859-1''' 的别称， 该编码于 1987 年推出，将 [[pt:ASCII|ASCII]] 扩展以支持欧洲语言。</p>
       <p />
-      <p>The first 32 字符集, 80…9F, are [[pt:控制字符|控制字符]] for compatibility with 7-bit 编码s: 邮件 programs some时间s lost the upper bit, 和 it’s infeasible to have [[pt:graphic|printable]] 字符集 here. Nowadays these 字符集 are not{{_}}used as intended 和 serve as [[pt:private|private-use]]. For example, Windows-1252 编码 is the same 拉丁文-1, but 控制字符 positions are replaced with typography 字符集. It got to the point where World Wide Web st和ards say: if a page requests ISO{{_}}8859-1, display it in Windows-1252.</p>
+      <p>前 32 个字符（80…9F）是 [[pt:control|控制字符]]，是为了兼容 7 位编码: 早期的邮件程序会丢弃最高位，因此在此处使用 [[pt:graphic|可打印]] 字符是不可行的。如今，这些字符已不再按原意使用，常被重新定义为 [[pt:private|私有用途]]。例如，Windows-1252 是 Latin-1 的修改版，其中的控制字符位置被替换为印刷字符。这甚至导致万维网（WWW）标准规定：如果页面请求 ISO{{_}}8859-1，则按 Windows-1252 显示。</p>
       <p />
-      <p>We see 字符集 × 和 ÷ among letters. 词首ly Œœ s霍语uld have been there, but the French delegate insisted that OE was enough.</p>
+      <p>我们在字母表中看到了乘号 × 和除号 ÷。最初那里本应是 Œœ，但法国代表坚持认为 OE 就足够了。</p>
      </transl>
     </text>
    </group>
    <group id="0100">
-    <text id="Name">
-     <orig>Latin extended A</orig>
-     <transl>拉丁文 扩展 A</transl>
-    </text>
     <text id="Text">
      <orig>Contains characters of Central and Eastern Europe, Baltic and Celtic languages, Saami, Maltese, Turkish, Esperanto and a few others.</orig>
      <transl>包含中欧和东欧、波罗的海和凯尔特语言、萨米语、马耳他语、土耳其语、世界语及其他一些语言的字符。</transl>
     </text>
    </group>
    <group id="0180">
-    <text id="Name">
-     <orig>Latin extended B</orig>
-     <transl>拉丁文 扩展 B</transl>
-    </text>
     <text id="Text">
-     <orig>Contains characters of Slovene, Croatian, Romanian, Livonian, Zhuang, Pinyin (Latin trascription of Chinese), African, Native American languages, and old (pre-1930) Latin of xUSSR languages.</orig>
-     <transl>包含斯洛文尼亚语、克罗地亚语、罗马尼亚语、立窝尼亚语、壮语、汉语拼音（中文的拉丁转写）、非洲语言、美洲原住民语言以及旧苏联语言的早期（1930年前）拉丁化形式的字符。</transl>
+     <orig>Contains characters of Slovene, Croatian, Romanian, Livonian, Zhuang, Pinyin (Latin transcription of Chinese), African, Native American languages, and old (pre-1930) Latin of xUSSR languages.</orig>
+     <transl>包含斯洛文尼亚语、克罗地亚语、罗马尼亚语、立窝尼亚语、壮语、汉语拼音（中文的拉丁转写）、非洲语言、美洲原住民语言以及旧苏联语言的早期（1930 年前）拉丁化形式的字符。</transl>
     </text>
    </group>
    <group id="0250">
@@ -1343,20 +1470,20 @@
       <p>Also using IPA characters you can turn a text upside-down for a joke.</p>
      </orig>
      <transl>
-      <p>基于拉丁字母的国际音标用于语言学家、语音治疗师、歌手和演员传达语言的转写。为了表达额外的发音障碍，如牙齿摩擦声和咬舌音，使用了国际音标扩展。</p>
+      <p>基于拉丁字母的国际音标被语言学家、言语治疗师、歌手和演员用来记录语言的发音。为了表达额外的发音障碍，如牙齿摩擦声和咬舌音，使用了国际音标扩展。</p>
       <p />
-      <p>实际上，此块中的大多数字符并不是扩展，而是普通的国际音标：例如，{{sm|ɦ}}出现在俄语“ага” ''(aha)''、乌克兰语“гривня” ''(hryvnia)''和捷克语“hrad”中。</p>
+      <p>实际上，此块中的大多数字符并不是扩展，而是常规的国际音标：例如，{{sm|ɦ}} 出现在俄语 “ага” ''(aha)''、乌克兰语 “гривня” ''(hryvnia)'' 和捷克语 “hrad” 中。</p>
       <p />
-      <p>歌剧演唱家经常用未知语言演唱，他们阅读转写符号的能力常被词典编纂者利用。特别值得一提的是著名的“Yanny or Laurel”声音是由歌剧演唱家Jay Aubrey Jones录制的——低沉的男声通过低质量的扬声器和同样质量的麦克风播放时变成了“Yanny”。</p>
+      <p>歌剧演唱家经常用不熟悉的语言演唱，他们阅读转写符号的能力常被词典编纂者利用。特别值得一提的是著名的 “Yanny or Laurel” 声音是由歌剧演唱家 Jay Aubrey Jones 录制的——低沉的男声通过低质量的扬声器和和麦克风播放后，听起来变成了 “Yanny”。</p>
       <p />
-      <p>此外，使用国际音标字符还可以将文本倒置作为一种玩笑。</p>
+      <p>此外，利用国际音标字符还可以将文本倒置，以此作为玩笑。</p>
      </transl>
     </text>
    </group>
    <group id="02B0">
     <text id="Name">
      <orig>Spacing modifier letters</orig>
-     <transl>间距修饰字母</transl>
+     <transl>占位修饰字符</transl>
     </text>
     <text id="Text">
      <orig>
@@ -1365,16 +1492,16 @@
       <p>This block also has [[pt:spacing|spacing]] copies of diacritical marks.</p>
      </orig>
      <transl>
-      <p>摩底文fier letters are used in 电话tics 和 linguistics to convey tones, length, palatalization, incompletely pronounced 和 conditional 电话mes: English ''car'' is written as {{sm|[kɑːʳ]}}, 和 the last two 字符集 are 摩底文fiers that mean length 和 conditional {{t|r}}.</p>
+      <p>修饰字母用于语音学和语言学中，以表示声调、长短音、腭化、不完全发音和条件音位：英语单词 ''car'' 写作 {{sm|[kɑːʳ]}}，其中最后两个字符是修饰符，分别表示长音和条件性的 {{t|r}}。</p>
       <p />
-      <p>This 块 also has [[pt:spacing|spacing]] copies of diacritical marks.</p>
+      <p>该区块还包含 [[pt:spacing|独立占用宽度]] 的变音符号副本</p>
      </transl>
     </text>
    </group>
    <group id="0300">
     <text id="Name">
      <orig>Combining diacritical marks</orig>
-     <transl>组合变音标记</transl>
+     <transl>组合附加记号</transl>
     </text>
     <text id="Text">
      <orig>
@@ -1382,9 +1509,9 @@
       <p />
       <p>Unicode provides two ways of conveying diacritics, [[pt:precomposed|precomposed]] characters and combinations “main character +{{_}}'''[[pt:combining|combining]] mark'''”. To simplify search in such a mess, Unicode has an algorithm of [[pt:normalization|normalization]].</p>
       <p />
-      <p>Characters 034F CGJ is not{{_}}a{{_}}joiner, but ''disjoiner'' of digraphs. It’s used in Czech (ch is pronounced as {{t|x}}, and alphabetical order is ce &amp;lt;{{_}}c+CGJ+h &amp;lt;{{_}}ci &amp;lt;{{_}}d &amp;lt;{{_}}ch), Hungarian, Hebrew and some other languages.</p>
+      <p>Characters [[pc:034F]] CGJ is not{{_}}a{{_}}joiner, but ''disjoiner'' of digraphs. It’s used in Czech (ch is pronounced as {{t|x}}, and alphabetical order is ce &amp;lt;{{_}}c+CGJ+h &amp;lt;{{_}}ci &amp;lt;{{_}}d &amp;lt;{{_}}ch), Hungarian, Hebrew and some other languages.</p>
       <p />
-      <p>Character 0310 Candrabindu is intended for writing Indic languages in Latin and Cyrillic. Every [[pt:brahmic|Indic]] script has its own candrabindu.</p>
+      <p>Character [[pc:0310]] Candrabindu is intended for writing Indic languages in Latin and Cyrillic. Every [[pt:brahmic|Indic]] script has its own candrabindu.</p>
      </orig>
      <transl>
       <p>Diacritical marks are above-line, below-line 和 inline 字符集 affixed to letters, 和 摩底文fying or clarifying their meanings. For example, accent like in ''résumé''.</p>

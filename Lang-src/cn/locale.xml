@@ -1,17 +1,45 @@
-﻿<!--
-	WARNING: unmaintained.
-	If someone attempts to translate again, it’s better to recreate from scratch
--->
 <?xml version="1.0" encoding="UTF-8" ?>
 <locale native="汉语" international="Chinese" eng-terms="1">
 	<trigger-langs stamp="2025020">
 		<lang iso="cn" />
 	</trigger-langs>
+	<!-- Sorting Rules:
+		1. Digits < Latin letters < Japanese / Cyrillic < Symbols < Chinese characters
+		2. Compare character by character according to Pinyin: a < b < c < ... < z (case-insensitive)
+		3. For homophones (same letters): sort by tone, e.g., 妈 (mā) < 麻 (má) < 马 (mǎ) < 骂 (mà) < 吗 (ma)
+		4. For homophones with the same tone: sort by stroke count (ascending). 
+			For characters with the same stroke count: sort by initial stroke type: horizontal (一) < vertical (丨) < left-falling (丿) < dot (丶) < turning (乛)
+		5. For characters with identical stroke forms: sort by character
+			structure: left-right structure < top-bottom structure < enclosed / miscellaneous structure
+		6. Special handling: ü is transcribed as u; for polyphonic characters, use their most common pronunciation
+	 -->
 	<alpha-sort>
 		<alp>ABCDEFGHIJKLMNOPQRSTUVWXYZ</alp>
 		<alp>abcdefghijklmnopqrstuvwxyz</alp>
 		<alp>____________________Ü_____</alp>
 		<alp>____________________ü_____</alp>
+		<alp follow="1" />
+		<alp>阿埃爱安奥八巴拜半包碑北贝本彼变标表波</alp>
+		<alp follow="1" />
+		<alp>柏补布查创尔达傣代德低底帝杜多方非腓吠</alp>
+		<alp follow="1" />
+		<alp>费符甘高哥格古贡光国哈汉洪花回货基及吉</alp>
+		<alp follow="1" />
+		<alp>几加假箭交旧卡凯康科可克控库扩拉兰老勒</alp>
+		<alp follow="1" />
+		<alp>雷里利傈炼林隆卢鲁吕麻马玛麦曼盲梅门蒙</alp>
+		<alp follow="1" />
+		<alp>孟米缅摩莫默木穆纳乃南尼女努欧帕片平婆</alp>
+		<alp follow="1" />
+		<alp>扑浦奇棋契切佉钦撒萨桑塞僧上声诗竖数私</alp>
+		<alp follow="1" />
+		<alp>斯苏速粟算索它他塔唐太泰特提天通统投图</alp>
+		<alp follow="1" />
+		<alp>突托瓦万望围维挝乌西希悉锡夏线萧小楔型</alp>
+		<alp follow="1" />
+		<alp>匈叙巽雅亚谚伊彝易意音印永越杂藏早札占</alp>
+		<alp follow="1" />
+		<alp>制兹字中注爪篆装组</alp>
 	</alpha-sort>
 	<alpha-fixup />
 	<ellipsis text="…">
@@ -43,9 +71,8 @@
 		<!-- first{{,-}}second  →  typographic comma-dash -->
 		<tmpl name=",-"><![CDATA[,—<span style='font-size:4pt'> </span>]]></tmpl>
 	</wiki-templates>
-	<!-- Localized icons. Fixed set: if you want a new one, ask programmer -->
 	<icons sort-az="sort_cn" />
-	<num-format dec-point="." thou-min-length="4" thou-min-length-dense="5" />
+	<num-format dec-point="." thou-point=" " thou-min-length="4" thou-min-length-dense="5">
 		<imprecise>
 			<fmt shift="0" text="{1} 人" frac="never" />
 			<fmt shift="3" text="{1} 千人" frac="avoid" />
@@ -55,11 +82,15 @@
 		<moreless less="{1}以下" more="{1}以上" phase="unit" />
 		<percent inverse="0" space="1" />
 	</num-format>
+	<!-- Chinese has no rules for cardinal plurals -->
 	<cardinal-rules default-outcome="other" />
+	<ordinal-rules />
 	<!-- Misc. language peculiarities
 			still-uses-burmese: uses pair Myanmar/Burmese
 				(writes location of Myanmar for Burmese script) -->
 	<peculiarities still-uses-burmese="0" />
-	<punctuation key-value-colon="： " uniform-comma="、" semicolon="；"
-			left-paren="（" right-paren="）" indent-ellip="…" />
+	<punctuation key-value-colon="：" uniform-comma="，" semicolon="；"
+			left-paren="（" right-paren="）" indent-ellip="……"
+			range="…" year-range="—" to=" →" />
+	<rename-altcode />
 </locale>

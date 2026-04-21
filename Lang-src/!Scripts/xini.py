@@ -49,3 +49,9 @@ class Ini:
     def len(self):
         return len(self.data)
 
+    def at(self, key : string):
+        if key in self.data:
+            return self.data[key]
+        else:
+            return None
+

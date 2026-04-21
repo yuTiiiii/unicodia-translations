@@ -33,7 +33,7 @@ def _unescapeSlashes(x : string, id : string) -> string:
         pSlash = x.find('\\', pos)
         # not found / last
         if pSlash < 0:
-            return x
+            break
         if pSlash + 1 >= len(x):
             raise Exception(f'Strange ending escape in <{id}>')
         nextc = x[pSlash + 1]
@@ -48,6 +48,9 @@ def _unescapeSlashes(x : string, id : string) -> string:
         iReplacement = iReplacement + 1
         if iReplacement >= 30:
             raise Exception(f'Too many replacements in <{id}>, before <{xOld}>, after <{x}>')
+    if len(x) + iReplacement != len(xOld):
+        raise Exception(f'Escaped length mismatch in <{id}>')
+    return x        
 
 def _hackTranslation(hString : ET.Element, iniTransl : string, id : string):
     realTransl = _unescapeSlashes(iniTransl, id)

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ut type="full-transl">
  <info>
   <orig lang="en" fname="en.uorig" />
@@ -273,7 +273,7 @@
     <text id="NChars">
      <orig>{1|one=? character|many=? characters}</orig>
      <au-cmt>UNUSED, NChars2 instead</au-cmt>
-     <transl>{1|one=? 个字符|many=? 个字符}</transl>
+     <transl>{1} 个字符</transl>
     </text>
     <text id="NChars2">
      <orig>{1} ({2|one=? character|many=? characters})</orig>

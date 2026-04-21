@@ -31,18 +31,19 @@ def _unescapeSlashes(x : string, id : string) -> string:
     xOld = x
     while True:
         pSlash = x.find('\\', pos)
-        # not found / last
+        # not found
         if pSlash < 0:
             break
+        # last
         if pSlash + 1 >= len(x):
             raise Exception(f'Strange ending escape in <{id}>')
         nextc = x[pSlash + 1]
         if nextc == '\\':
             x = x[:pSlash] + '\\' + x[(pSlash + 2):]
-            pos = pSlash + 2
+            pos = pSlash + 1
         elif nextc == 'n':
             x = x[:pSlash] + '\n' + x[(pSlash + 2):]
-            pos = pSlash + 2
+            pos = pSlash + 1
         else:
             raise Exception(f'Strange escape \\{nextc} in <{id}>')
         iReplacement = iReplacement + 1
@@ -54,6 +55,20 @@ def _unescapeSlashes(x : string, id : string) -> string:
 
 def _hackTranslation(hString : ET.Element, iniTransl : string, id : string):
     realTransl = _unescapeSlashes(iniTransl, id)
+    hTransl = hString.find('transl')
+    if hTransl is None:
+        raise Exception(f'Cannot find <transl> in <{id}>')
+    hTransl.clear()
+    lines = realTransl.split('\n')
+    if len(lines) <= 1:
+        if len(lines) == 1:
+            hTransl.text = lines[0]
+    else:
+        for v in lines:
+            el = ET.Element('p')
+            if v != '':
+                el.text = v
+            hTransl.append(el)
 
 def _stickIds(prefix : string, suffix : string):
     if prefix == '':

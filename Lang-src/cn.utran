@@ -272,7 +272,7 @@
     <text id="NChars">
      <orig>{1|one=# character|many=# characters}</orig>
      <au-cmt>UNUSED, NChars2 instead</au-cmt>
-     <transl>{1|one=# 个字符|many=# 个字符}</transl>
+     <transl>{1} 个字符</transl>
     </text>
     <text id="NChars2">
      <orig>{1} ({2|one=# character|many=# characters})</orig>
@@ -281,7 +281,7 @@
       <p>{2} = # of characters</p>
       <p>Test: almost every header of pop-up window: Control, Latin, blocks…</p>
      </au-cmt>
-     <transl>{1}（{2|one=# 个字符|many=# 个字符}）</transl>
+     <transl>{1}（{2} 个字符）</transl>
     </text>
     <text id="NoHent">
      <orig>without &lt;a {1} &gt;Hentaigana&lt;/a&gt;</orig>
@@ -300,7 +300,7 @@
       <p>{3} = additional technical tags (e.g. href, style)</p>
       <p>Test: Hiragana</p>
      </au-cmt>
-     <transl>{1} ({2|one=# 个字符|many=# 个字符} 不含 &lt;a {3} &gt;变体假名&lt;/a&gt;)</transl>
+     <transl>{1} ({2} 个字符 不含 &lt;a {3} &gt;变体假名&lt;/a&gt;)</transl>
     </text>
     <text id="Comp">
      <orig>String content</orig>
@@ -1124,7 +1124,7 @@
     <text id="Data">
      <orig>{1} {2} {3|one=# stroke|many=# strokes}</orig>
      <au-cmt>1=radical, 2=±, 3=# of strokes</au-cmt>
-     <transl>{1} {2} {3|one=? 画|many=? 画}</transl>
+     <transl>{1} {2} {3} 画</transl>
     </text>
    </group>
    <group id="Ver">

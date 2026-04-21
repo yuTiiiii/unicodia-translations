@@ -7,8 +7,10 @@ import xini
 # Ini file, completely translated
 IN_INI = "../cn/lang.ini"
 
-# Some translation, completely translated (no bad/untranslated),
-# roughly the same time as Ini
+# Some translation:
+#  * completely translated (no bad/untranslated),
+#  * roughly the same time as Ini
+#  * better the same settings as wanted (reference, pseudoloc...)
 IN_TRANSL = "../ru.utran"
 
 # Output file
@@ -26,12 +28,15 @@ root = xml.getroot()
 
 def countStringsRec(node):
     sum = 0
+    for v in node.findall('group'):
+        sum += countStringsRec(v);
+    sum += len(node.findall('text'))
     return sum
 
 def countStrings(node):
     hFile = node.find('file')
     if hFile is None:
-        return 0
+        raise Exception("Cannot find <file> un UTran for some reason")
     return countStringsRec(hFile)
 
 cnt = countStrings(root)

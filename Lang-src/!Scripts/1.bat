@@ -1,0 +1,2 @@
+python IniToUtran.py
+pause

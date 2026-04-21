@@ -32,7 +32,8 @@ print(f'Loaded {cnt} XML strings.')
 
 # Work
 xet.fixupSettings(root, OUT_LANG)
-xet.retranslate(root, ini)
+nRet = xet.retranslate(root, ini)
+print(f'Retranslated {nRet} strings.')
 
 # Save
 xml.write(OUT_FILE, 'utf-8')

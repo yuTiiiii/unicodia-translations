@@ -75,8 +75,9 @@ def _stickIds(prefix : string, suffix : string):
         return suffix
     return prefix + '.' + suffix
 
-def _retranslateRec(node : ET.Element, ini : xini.Ini, prefix : string):
+def _retranslateRec(node : ET.Element, ini : xini.Ini, prefix : string) -> int:
     index = 0
+    r = 0
     for v in node.findall('group'):
         index = index + 1
         if not 'id' in v.attrib:
@@ -85,7 +86,7 @@ def _retranslateRec(node : ET.Element, ini : xini.Ini, prefix : string):
         if newId == '':
             raise Exception(f'Empty id in UTransl / {prefix} / group #{index}')
         newPrefix = _stickIds(prefix, newId)
-        _retranslateRec(v, ini, newPrefix)
+        r = r + _retranslateRec(v, ini, newPrefix)
     index = 0
     for v in node.findall('text'):
         index = index + 1
@@ -99,8 +100,10 @@ def _retranslateRec(node : ET.Element, ini : xini.Ini, prefix : string):
         if translation is None:
             raise Exception(f'Cannot translate {newPrefix}')
         _hackTranslation(v, translation, newBigId)
+        r = r + 1
+    return r
 
-def retranslate(root : ET.Element, ini : xini.Ini):
+def retranslate(root : ET.Element, ini : xini.Ini) -> int:
     hFile = root.find('file')
     if hFile is None:
         raise Exception("Cannot find <file> in UTran for some reason")

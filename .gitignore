@@ -70,5 +70,9 @@ Font-Source/GlyphWiki/AutoRemade/*.svg
 Font-Source/GlyphWiki/UnicodiaHan1.ttf
 Font-Source/GlyphWiki/UnicodiaHan.ttf
 
+# Temporary filesa of Python
+__pycache__
+
+
 # Misc files
 *.log

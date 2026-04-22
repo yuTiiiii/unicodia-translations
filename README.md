@@ -2,9 +2,9 @@
 
 It is a simple Unicode encyclopedia and the most comprehensive character map ever. Right now Windows only.
 
-**Lifecycle phase: 5** (production/stable). Minor troubles with sustainability, but generally survived five releases of Unicode, 14.0 to 17.0.
+**Lifecycle phase: 5/7** (production/stable, inactive). Minor troubles with sustainability, but generally survived five releases of Unicode, 14.0 to 17.0. Probably won’t survive 18.0, just because…
 
-**I’m in Ukraine torn with war, so I’ll release often.** See “war release” tag in Issues.
+**I’m a Ukrainian officer now.** Everything may happen: maybe I’ll start the work again. Maybe I’ll just get killed.
 
 # Note about Egyptian font
 

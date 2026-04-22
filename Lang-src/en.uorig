@@ -10210,7 +10210,7 @@
    <group id="1.1">
     <text id="Text">
      <orig>
-      <p>The first version that became ISO standard, and the first existing in Unicode bases. Bases of 1.0 and 1.0.1 are reconstructed.</p>
+      <p>The first version that became an ISO standard, and the first existing in Unicode bases. The bases of 1.0 and 1.0.1 are reconstructed.</p>
       <p />
       <p>Version 1.0 (October 1991, ≈{{n|7200}} characters) added most scripts of 1.1, including [[ps:Tibt|Tibetan]] deleted in 1.1, and {{n|2350}} [[ps:Hang|Hangul]] syllables that would be deleted in [[pv:2.0|2.0]].</p>
       <p />
@@ -10222,7 +10222,7 @@
    </group>
    <group id="2.0">
     <text id="Text">
-     <orig>Version 2.0 moved [[pt:precomposed|precomposed]] [[ps:Hang|Hangul]] syllables to their current place. After a great outcry Unicode adopted main [[pt:stability|stability]] guarantee: the character will not move or disappear.</orig>
+     <orig>Version 2.0 moved [[pt:precomposed|precomposed]] [[ps:Hang|Hangul]] syllables to their current place. After a great outcry, Unicode adopted the main [[pt:stability|stability]] guarantee: the character will not move or disappear.</orig>
     </text>
    </group>
    <group id="2.1">
@@ -10259,9 +10259,9 @@
    <group id="15.1">
     <text id="Text">
      <orig>
-      <p>Unicode Consortium experienced staff problems, release manager had gone and Sinologist died. So they decided to make a minor release: five ideographic description characters, 18 right-facing emoji, and 10 emoji sequences including lime, phoenix, and silhouettes of families.</p>
+      <p>Unicode Consortium experienced staff problems: the release manager had gone, and the Sinologist died. So they decided to make a minor release: five ideographic description characters, 18 right-facing emoji, and 10 emoji sequences including lime, phoenix, and silhouettes of families.</p>
       <p />
-      <p>Chinese government also forced to do an urgent job, see [[pk:2EBF0|CJK ideographs extension I]].</p>
+      <p>The Chinese government also forced to do an urgent job, see [[pk:2EBF0|CJK ideographs extension I]].</p>
       <p />
       <p>A very big release 16.0 is expected in 2024.</p>
      </orig>
@@ -10271,10 +10271,10 @@
     <text id="Text">
      <orig>
       <p>Besides character additions, there were many internal changes in Unicode.</p>
-      <p>* Rewrote algorithms of rendering Arabic text.</p>
+      <p>* Rewrote algorithms for rendering Arabic text.</p>
       <p>* Wrote character sequences that should not exist in Unicode text.</p>
       <p>* Added base of Egyptian hieroglyphs.</p>
-      <p>* Turned PDF specification to HTML site.</p>
+      <p>* Turned the PDF specification into an HTML site.</p>
       <p />
       <p>Unicode{{_}}16 might have exactly {{n|155000}} characters (excluding 65 [[pt:control|control]]){{-}}but two Indic [[pt:ligature|ligatures]] were removed.</p>
      </orig>
@@ -10298,7 +10298,7 @@
       <p>* Multiple musical symbols, including long-awaited [[pc:1D1EB|half-sharp]] and [[pc:1D1ED|half-flat]] from modern software.</p>
       <p>* Historical [[ps:Latn|Latin]]-based transcription.</p>
       <p>* Old mathematical notations.</p>
-      <p>* [[ps:Arab|Arabic]] “capital” letters (Egypt, 1932).</p>
+      <p>* [[pk:10EC0|Arabic]] “capital” letters (Egypt, 1932).</p>
      </orig>
     </text>
    </group>

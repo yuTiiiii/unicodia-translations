@@ -93,8 +93,4 @@
 			left-paren="（" right-paren="）" indent-ellip="……"
 			range="…" year-range="—" to=" →" />
 	<rename-altcode />
-<<<<<<< HEAD
 </locale>
-=======
-</locale>
->>>>>>> ab93a38815b87100103320d35b78f25be6f59cc4
